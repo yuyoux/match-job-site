@@ -1,0 +1,84 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+div.detailedcard-wrapper {
+  background-color: $background;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+div.detailedcard {
+  background-color: $body;
+}
+
+div.detailedcard-imagewrapper {
+  padding: 0;
+}
+
+div.detailedcard-tiffanywrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $tiffany;
+}
+
+div.detailcard-text__smalltitle {
+  color: $dark;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+div.detailcard-text__title {
+  color: white;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+img.detailedcard-image {
+  width: 100%;
+  height: 100%;
+}
+
+div.detailedcard-metawrapper {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+div.detailedcard-metawrapper2 {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+div.detailcard-text__subtitle {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+div.detailcard-text__subtitle2 {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  padding-left: 0;
+}
+
+div.detailcard-text__normalsubtitle {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-left: 0;
+}
+
+div.detailedcard-metarow {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $background;
+}

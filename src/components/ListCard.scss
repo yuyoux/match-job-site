@@ -1,0 +1,27 @@
+@import "../styles/variables";
+
+.card-text__title {
+  color: $dark;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-text__subtitle {
+  color: $tiffany;
+  font-size: 1rem;
+  line-height: 0.5;
+}
+
+.card-text__subtitle2 {
+  color: $dark;
+  font-size: 0.875rem;
+}
+
+div.card {
+  border: none;
+}
+
+div.card-footer {
+  border: none;
+  cursor: pointer;
+}

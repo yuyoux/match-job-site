@@ -6,7 +6,6 @@ import "./JobList.scss";
 
 const JobList = props => {
   const [joblist, setJoblist] = useState([]);
-  const [selectedJob, setSelectedJob] = useState("");
 
   useEffect(() => {
     axios({

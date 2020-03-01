@@ -1,34 +1,22 @@
 import React from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import "./App.scss";
-import Logo from "./Assets/Logo.jpg";
-import { Card, Row, Col, Media } from "reactstrap";
 import JobList from "./pages/JobList";
 import JobDetails from "./pages/JobDetail";
+import Profile from "./pages/Profile";
+import Header from "./components/Header";
+import GoogleMapPage from "./pages/GoogleMapPage";
 
 function App() {
   return (
     <div className="App">
-      <Row className="header__wrapper">
-        <Col xs="6" md="2" className="text-left align-self-center header__logo">
-          <Media
-            style={{ width: "100%", height: "auto" }}
-            src={Logo}
-            alt="logo"
-          />
-        </Col>
-        <Col
-          xs="6"
-          md="10"
-          className="text-right align-self-center header__user"
-        >
-          <h5 className="mb-0">Jim Rose</h5>
-        </Col>
-      </Row>
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/" component={JobList} />
-          <Route path="/details/:id" component={JobDetails} />
+          <Route exact path="/details/:id" component={JobDetails} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/details/:id/map" component={GoogleMapPage} />
         </Switch>
       </Router>
     </div>

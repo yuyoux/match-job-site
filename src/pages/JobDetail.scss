@@ -7,6 +7,12 @@ div.detailedcard-wrapper {
   padding-right: 1rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
+  @include for-tablet-portrait-up {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
 }
 
 div.detailedcard {
@@ -77,8 +83,34 @@ div.detailcard-text__normalsubtitle {
   padding-left: 0;
 }
 
+div.detailcard-text__smallsubtitle {
+  font-size: 0.7rem;
+  color: grey;
+  padding-left: 0;
+}
+
 div.detailedcard-metarow {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid $background;
+}
+
+button.detailcard-button {
+  width: 100%;
+}
+
+button.detailcard-button:hover {
+  width: 100%;
+  background-color: black;
+}
+
+button.detailcard-button__inverted {
+  width: 100%;
+  background-color: black;
+}
+
+button.detailcard-button__inverted:hover {
+  width: 100%;
+  background-color: white;
+  color: black;
 }

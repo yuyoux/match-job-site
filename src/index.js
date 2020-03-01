@@ -4,8 +4,18 @@ import "./index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
+import { ToastProvider } from "react-toast-notifications";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <ToastProvider
+    autoDismiss
+    autoDismissTimeout={3000}
+    placement="bottom-center"
+  >
+    <App />
+  </ToastProvider>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

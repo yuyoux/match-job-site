@@ -7,7 +7,11 @@ const ListCard = ({ job, selectJob }) => {
     <Card className="rounded-0">
       <CardBody>
         <Row>
-          <Col xs="12" className="text-left card-text__title">
+          <Col
+            data-testid="info"
+            xs="12"
+            className="text-left card-text__title"
+          >
             {job.jobTitle.name}
           </Col>
           <Col xs="12" className="text-left card-text__subtitle">

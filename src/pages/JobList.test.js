@@ -1,8 +1,8 @@
 import React from "react";
-import PolicyList from "./PolicyList";
+import JobList from "./JobList";
 import { render, waitForElement, cleanup } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import { policy } from "../common/testdata";
+import { job } from "../common/testdata";
 
 afterEach(cleanup);
 
@@ -11,16 +11,16 @@ const mockAxios = {
 };
 
 describe("test suite: Check list page", () => {
-  test("case: correcting getting policy data", async () => {
-    const { getAllByTestId } = render(<PolicyList />);
+  test("case: correcting getting jobs data", async () => {
+    const { getAllByTestId } = render(<JobList />);
     mockAxios.get.mockResolvedValueOnce({
       data: {
-        policies: [policy]
+        jobs: [job]
       }
     });
     const resolvedSpan = await waitForElement(() =>
-      getAllByTestId("policy-fetch")
+      getAllByTestId("job-fetch")
     );
-    expect(resolvedSpan).toHaveLength(3);
+    expect(resolvedSpan).toHaveLength(2);
   });
 });

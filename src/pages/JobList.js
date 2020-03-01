@@ -35,7 +35,11 @@ const JobList = props => {
   return (
     <React.Fragment>
       {joblist.map((job, index) => (
-        <div key={job.jobId} className="card-background">
+        <div
+          key={job.jobId}
+          className="card-background"
+          data-testid="job-fetch"
+        >
           <ListCard job={job} selectJob={selectJob}></ListCard>
         </div>
       ))}

@@ -14,6 +14,7 @@ function GoogleMapPage(props) {
               className="text-left card-text__title"
               style={{ cursor: "pointer" }}
             >
+              {/* click and open google map */}
               <a
                 target="_blank"
                 rel="noopener noreferrer"

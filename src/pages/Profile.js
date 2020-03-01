@@ -22,7 +22,7 @@ const Profile = props => {
       .catch(err => console.log(err));
   }, []);
   return (
-    <div className="detailedcard-wrapper">
+    <div className="detailedcard-wrapper" data-testid="profile-fetch">
       <Card className="rounded-0">
         <CardBody>
           <Row>
